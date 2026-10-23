@@ -1,0 +1,33 @@
+:root {
+  --cor-cabecalho: #0b0a2e;
+  --cor-avisos: #05050f;
+  --cor-cartao: #07052d;
+  --cor-rodape: #0f0b3e;
+  --cor-aviso-texto: #ff1414;
+  --fonte-titulo: 'Orbitron', 'Segoe UI', system-ui, sans-serif;
+  --fonte-texto: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--cor-cabecalho);
+  color: #fff;
+  font-family: var(--fonte-texto);
+}
+
+a,
+button {
+  font: inherit;
+  color: inherit;
+}
+
+#root {
+  min-height: 100svh;
+}
