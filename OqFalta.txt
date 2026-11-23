@@ -1,0 +1,22 @@
+O QUE FALTA NO TCC (23/11)
+ 
+Do sistema
+- Admin lançar e corrigir nota dos outros usuários (hoje cada um lança a sua).
+- Admin ver, editar e excluir usuários. Hoje ele só cadastra.
+- IA só responde dúvida. Não busca nem gera exercício de verdade.
+- Boletim só soma as notas do trimestre. Falta média final e aprovação, mas as regras não estão nos slides.
+- Chat atualiza de tempos em tempos, não é em tempo real.
+- Testar no celular e ajustar o layout.
+ 
+Testes
+- Passar por todas as telas no navegador com duas ou três contas.
+- Testar turmas, frequência, material e compartilhar mural, que só foram testados no backend.
+- Ver se o chat de IA responde (precisa de crédito na API da OpenAI).
+ 
+Antes de entregar
+- Tirar o .env do zip e do GitHub.
+- Trocar o SEGREDO por um texto grande e aleatório.
+- Atualizar o texto do TCC: papéis (usuário e admin), turmas, frequência, material, compartilhamento, IA e MySQL.
+- Colocar telas novas nos slides, se for apresentar.
+- Combinar com a orientadora como declarar o uso de IA no desenvolvimento.
+ 

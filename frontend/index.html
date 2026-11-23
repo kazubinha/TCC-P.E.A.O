@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Orbitron:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>P.E.A.O</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      function mostrarErro(msg) {
+        var d = document.createElement('pre')
+        d.style.cssText = 'position:fixed;inset:0;margin:0;padding:1rem;background:#300;color:#fff;font:14px monospace;white-space:pre-wrap;overflow:auto;z-index:99999'
+        d.textContent = 'Erro no P.E.A.O (copie este texto):\n\n' + msg
+        document.body.appendChild(d)
+      }
+      window.addEventListener('error', function (e) {
+        mostrarErro(e.message + (e.filename ? '\n' + e.filename + ':' + e.lineno : ''))
+      })
+      window.addEventListener('unhandledrejection', function (e) {
+        mostrarErro(String((e.reason && e.reason.stack) || e.reason))
+      })
+    </script>
+    <script type="module" src="/src/main.jsx" onerror="mostrarErro('Não foi possível carregar /src/main.jsx. Veja o terminal onde roda o npm run dev.')"></script>
+  </body>
+</html>
