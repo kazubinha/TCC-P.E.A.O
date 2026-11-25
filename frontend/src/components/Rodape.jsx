@@ -1,8 +1,8 @@
 import Logo from './Logo.jsx'
 
 const COLUNAS = [
-  { titulo: 'Informações Gerais', links: ['Lorem Ipsum', 'Lorem Ipsum', 'Lorem Ipsum', 'Lorem Ipsum'] },
-  { titulo: 'Contato', links: ['Lorem Ipsum', 'Lorem Ipsum', 'Lorem Ipsum', 'Lorem Ipsum'] },
+  { titulo: 'Informações Gerais', links: ['Sobre o projeto', 'Como funciona', 'Perguntas frequentes', 'Termos de uso'] },
+  { titulo: 'Contato', links: ['Fale conosco', 'Suporte', 'Redes sociais', 'Trabalhe conosco'] },
 ]
 
 export default function Rodape() {
